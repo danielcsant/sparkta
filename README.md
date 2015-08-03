@@ -146,3 +146,7 @@ Documentation
 -------------
 
 - [Stratio Sparkta](http://docs.stratio.com/modules/sparkta/development/)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/danielcsant/sparkta/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
