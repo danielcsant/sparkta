@@ -177,6 +177,11 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>org.apache.solr</groupId>
+                <artifactId>solr-solrj</artifactId>
+                <version>5.2.1</version>
+            </dependency>
+            <dependency>
                 <groupId>com.stratio.sparkta</groupId>
                 <artifactId>web</artifactId>
                 <version>${project.version}</version>
@@ -519,13 +524,13 @@
                 </pluginManagement>
             </build>
         </profile>
-        <profile>
-            <id>spark-1.3</id>
-            <properties>
-                <spark.version.folder>1.3</spark.version.folder>
-                <spark.version>1.3.1</spark.version>
-            </properties>
-        </profile>
+        <!--<profile>-->
+            <!--<id>spark-1.3</id>-->
+            <!--<properties>-->
+                <!--<spark.version.folder>1.3</spark.version.folder>-->
+                <!--<spark.version>1.3.1</spark.version>-->
+            <!--</properties>-->
+        <!--</profile>-->
         <profile>
             <id>spark-1.4</id>
             <activation>
@@ -536,12 +541,12 @@
                 <spark.version.folder>1.4</spark.version.folder>
             </properties>
         </profile>
-        <profile>
-            <id>spark-1.5</id>
-            <properties>
-                <spark.version.folder>1.5</spark.version.folder>
-                <spark.version>1.5.2</spark.version>
-            </properties>
-        </profile>
+        <!--<profile>-->
+            <!--<id>spark-1.5</id>-->
+            <!--<properties>-->
+                <!--<spark.version.folder>1.5</spark.version.folder>-->
+                <!--<spark.version>1.5.2</spark.version>-->
+            <!--</properties>-->
+        <!--</profile>-->
     </profiles>
 </project>

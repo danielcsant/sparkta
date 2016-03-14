@@ -76,7 +76,13 @@ case class MorphlineImpl(config: String) {
     morphline.get().process(inputRecord)
     coll.records.headOption match {
       case None => new Event(Map())
-      case Some(record) => toEvent(record)
+      case Some(record) => {
+        if (coll.records.headOption.get.getFirstValue("numEvents").equals(1)){
+          toEvent(record)
+        } else{
+          new Event(Map())
+        }
+      }
     }
   }
 

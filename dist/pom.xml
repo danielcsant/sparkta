@@ -250,16 +250,16 @@
                             </defaults>
                         </configuration>
                         <executions>
-                            <execution>
-                                <id>deb</id>
-                                <phase>package</phase>
-                                <goals>
-                                    <goal>package-deb</goal>
-                                </goals>
-                                <configuration>
-                                    <architecture>all</architecture>
-                                </configuration>
-                            </execution>
+                            <!--<execution>-->
+                                <!--<id>deb</id>-->
+                                <!--<phase>package</phase>-->
+                                <!--<goals>-->
+                                    <!--<goal>package-deb</goal>-->
+                                <!--</goals>-->
+                                <!--<configuration>-->
+                                    <!--<architecture>all</architecture>-->
+                                <!--</configuration>-->
+                            <!--</execution>-->
                             <execution>
                                 <id>rpm</id>
                                 <phase>package</phase>

@@ -96,24 +96,24 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <profiles>
-        <profile>
-            <id>default-outputs</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <modules>
-                <module>output-mongodb</module>
-                <module>output-elasticsearch</module>
-                <module>output-cassandra</module>
-                <module>output-redis</module>
-                <module>output-parquet</module>
-            </modules>
-        </profile>
-        <profile>
-            <id>spark-1.3</id>
-        </profile>
-    </profiles>
+    <!--<profiles>-->
+        <!--<profile>-->
+            <!--<id>default-outputs</id>-->
+            <!--<activation>-->
+                <!--<activeByDefault>true</activeByDefault>-->
+            <!--</activation>-->
+            <!--<modules>-->
+                <!--<module>output-mongodb</module>-->
+                <!--<module>output-elasticsearch</module>-->
+                <!--<module>output-cassandra</module>-->
+                <!--<module>output-redis</module>-->
+                <!--<module>output-parquet</module>-->
+            <!--</modules>-->
+        <!--</profile>-->
+        <!--<profile>-->
+            <!--<id>spark-1.3</id>-->
+        <!--</profile>-->
+    <!--</profiles>-->
 
     <build>
         <plugins>
